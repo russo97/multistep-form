@@ -1,0 +1,19 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  outline-color: transparent;
+}
+
+
+html {
+  font-size: 10px;
+
+  &,
+  body,
+  #__nuxt {
+    height: 100%;
+  }
+}
