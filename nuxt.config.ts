@@ -10,11 +10,20 @@ export default defineNuxtConfig({
   },
 
   css: [
+    '/assets/css/style.css',
     '/assets/css/main.scss'
   ],
 
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   modules: [
-    '@formkit/nuxt'
+    '@formkit/nuxt',
+    '@pinia/nuxt'
   ],
 
   vite: {
