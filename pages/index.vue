@@ -1,22 +1,13 @@
-<template>
-  <h1>Home</h1>
-
-  <h1>{{ $t('hello', { name: 'vue-i18n' }) }}</h1>
-
-  <NuxtLink to="/step-1">Next Page</NuxtLink>
-</template>
-
 <script setup>
-import { definePageMeta, useHead } from '#imports'
-
-useHead({
-  title: 'Personal Info | Multistep Form'
-})
+import { definePageMeta } from '#imports'
 
 definePageMeta({
-  layout: 'main'
+  redirect: {
+    name: 'step',
+
+    params: {
+      step: 1
+    }
+  }
 })
 </script>
-
-<style lang="scss" scoped>
-</style>
