@@ -1,5 +1,12 @@
 
 {
-  "hello": "Hello, {name}!",
-  "language": "Inglês"
+  "project-name": "Multistep Form",
+  "pages": {
+    "title": [
+      "Personal Info",
+      "Select Your Plan",
+      "Pick add-ons",
+      "Finishing up"
+    ]
+  }
 }

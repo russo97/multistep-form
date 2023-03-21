@@ -1,5 +1,11 @@
 
 {
-  "hello": "Olá, {name}!",
-  "language": "Português"
+  "pages": {
+    "title": [
+      "Informações Pessoais",
+      "Selecione Seu Plano",
+      "Escolha os complementos",
+      "Finalizando"
+    ]
+  }
 }
