@@ -1,10 +1,4 @@
 <template>
-  <h1>Step Page {{ $route.params.step }}</h1>
-
-  <span>
-    {{ $t('pages.title[3]') }}
-  </span>
-
   <FormBase>
     ok
   </FormBase>
@@ -17,7 +11,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 const $route = useRoute()
 
-import FormBase from '../views/FormBase.vue'
+import FormBase from '../views/FormBaseView.vue'
 
 const stepTitle = `pages.title[${$route.params.step - 1}]`
 
@@ -34,6 +28,5 @@ definePageMeta({
 })
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
 </style>

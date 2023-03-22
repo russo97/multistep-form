@@ -8,5 +8,22 @@
       "Pick add-ons",
       "Finishing up"
     ]
+  },
+  "steps": {
+    "label": "step",
+    "items": [
+      {
+        "label": "your info"
+      },
+      {
+        "label": "select plan"
+      },
+      {
+        "label": "add-ons"
+      },
+      {
+        "label": "summary"
+      }
+    ]
   }
 }
