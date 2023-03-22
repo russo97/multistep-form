@@ -1,7 +1,7 @@
 <template>
   <div class="step">
     <div class="step__wrapper">
-      <div class="step__number">
+      <div class="step__number text-xl font-bold flex items-center justify-center">
         {{ step }}
       </div>
 
@@ -32,6 +32,7 @@ const stepLabel = computed(() => `steps.items[${props.step - 1}].label`)
     &__number {
       width: 36px;
       aspect-ratio: 1;
+      font-family: "Ubuntu", sans-serif;
     }
   }
 </style>

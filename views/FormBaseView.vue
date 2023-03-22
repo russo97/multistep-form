@@ -1,7 +1,7 @@
 <template>
   <section class="formbase">
     <div class="formbase__wrapper">
-      <div class="formbase__steps flex justify-center items-center">
+      <div class="formbase__steps flex justify-center items-center gap-x-4">
         <SingleStep
           v-for="step in howManySteps"
           :key="step"
