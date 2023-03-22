@@ -20,14 +20,12 @@ module.exports = {
         'pastel-blue': 'hsl(228, 100%, 84%)',
         'purplish-blue': 'hsl(243, 100%, 62%)',
         'strawberry-red': 'hsl(354, 84%, 57%)'
-      }
-    },
+      },
 
-    configViewer: {
-      fonts: [
-        'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap'
-      ]
-    },
+      fontFamily: {
+        ubuntu: 'Ubuntu, sans-serif'
+      }
+    }
   },
   plugins: [],
 }

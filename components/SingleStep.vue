@@ -1,7 +1,10 @@
 <template>
   <div class="step">
-    <div class="step__wrapper">
-      <div class="step__number text-xl font-bold flex items-center justify-center">
+    <div class="step__wrapper h-full">
+      <div
+        class="step__number h-full text-base font-bold font-ubuntu flex items-center justify-center border border-white text-white rounded-full transition-colors"
+        :class="{ 'bg-light-blue border-0 font-sans !text-marine-blue': highlighted }"
+      >
         {{ step }}
       </div>
 
@@ -21,7 +24,9 @@ const props = defineProps({
   step: {
     type: Number,
     required: true
-  }
+  },
+
+  highlighted: Boolean
 })
 
 const stepLabel = computed(() => `steps.items[${props.step - 1}].label`)
@@ -29,10 +34,10 @@ const stepLabel = computed(() => `steps.items[${props.step - 1}].label`)
 
 <style lang="scss" scoped>
   .step {
+    width: 36px;
+    height: 36px;
+
     &__number {
-      width: 36px;
-      aspect-ratio: 1;
-      font-family: "Ubuntu", sans-serif;
     }
   }
 </style>
