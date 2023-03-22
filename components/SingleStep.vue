@@ -5,7 +5,7 @@
         {{ step }}
       </div>
 
-      <div class="step__text">
+      <div class="step__text hidden md:flex">
         <small class="step__info">
           {{ $t('steps.label') }} {{ $t(stepLabel) }}
         </small>
@@ -27,4 +27,11 @@ const props = defineProps({
 const stepLabel = computed(() => `steps.items[${props.step - 1}].label`)
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  .step {
+    &__number {
+      width: 36px;
+      aspect-ratio: 1;
+    }
+  }
+</style>

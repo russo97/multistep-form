@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '/assets/css/style.css',
     '/assets/css/main.scss'
   ],
 
@@ -19,6 +18,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@formkit/nuxt',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@nuxtjs/tailwindcss'
   ]
 })
