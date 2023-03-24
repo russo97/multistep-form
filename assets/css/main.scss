@@ -2,5 +2,11 @@
 @import "reset";
 
 body {
+  height: theme('height.full');
   background-color: theme('colors.magnolia');
+
+  #__nuxt {
+    display: grid;
+    place-items: center;
+  }
 }
