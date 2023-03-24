@@ -24,6 +24,11 @@ module.exports = {
 
       fontFamily: {
         ubuntu: 'Ubuntu, sans-serif'
+      },
+
+      backgroundImage: {
+        'mobile-pattern': 'url("/assets/images/bg-sidebar-mobile.svg")',
+        'desktop-pattern': 'url("/assets/images/bg-sidebar-desktop.svg")'
       }
     }
   },
