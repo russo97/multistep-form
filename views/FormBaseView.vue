@@ -1,7 +1,26 @@
 <template>
-  <section class="formbase">
-    <div class="formbase__wrapper">
-      <div class="formbase__steps flex justify-center gap-x-4 pt-9">
+  <section class="formbase w-full h-full">
+    <div class="formbase__wrapper w-full h-full lg:p-4 lg:bg-white">
+      <div
+        class="
+          flex
+          lg:flex-col
+          gap-x-4
+          lg:gap-y-8
+          justify-center
+          lg:justify-start
+          pt-9
+          lg:p-8
+          lg:w-[288px]
+          h-[170px]
+          lg:h-full
+          bg-center
+          bg-cover
+          bg-no-repeat
+          bg-mobile-pattern
+          lg:bg-desktop-pattern
+        "
+      >
         <SingleStep
           v-for="step in howManySteps"
           :key="step"
@@ -24,10 +43,4 @@ const route = useRoute()
 </script>
 
 <style lang="scss" scoped>
-  .formbase {
-    &__steps {
-      height: 170px;
-      background: transparent url('/assets/images/bg-sidebar-mobile.svg') center / cover no-repeat;
-    }
-  }
 </style>
