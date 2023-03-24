@@ -2,7 +2,21 @@
   <div class="step">
     <div class="step__wrapper h-full">
       <div
-        class="step__number h-full text-base font-bold font-ubuntu flex items-center justify-center border border-white text-white rounded-full transition-colors"
+        class="
+          step__number
+          text-base
+          font-bold
+          text-white
+          font-ubuntu
+          flex
+          items-center
+          justify-center
+          h-full
+          border
+          border-white
+          rounded-full
+          transition-colors
+        "
         :class="{ 'bg-light-blue border-0 font-sans !text-marine-blue': highlighted }"
       >
         {{ step }}
