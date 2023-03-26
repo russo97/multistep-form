@@ -25,7 +25,7 @@
 
       <div class="step__text hidden lg:flex flex-col">
         <small class="step__info uppercase text-cool-gray font-ubuntu text-xs">
-          {{ $t('steps.label') }} {{ step }}
+          {{ $t('steps.label', { step }) }}
         </small>
 
         <strong class="step__label uppercase text-white font-ubuntu text-sm">

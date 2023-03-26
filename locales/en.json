@@ -10,7 +10,7 @@
     ]
   },
   "steps": {
-    "label": "step",
+    "label": "step {step}",
     "items": [
       {
         "label": "your info"
