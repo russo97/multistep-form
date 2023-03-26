@@ -11,10 +11,6 @@
 
 <style lang="scss" scoped>
   .main {
-    &,
-    &__wrapper {
-    }
-
     @media (min-width: 1024px) {
       aspect-ratio: 1 / .64;
     }
