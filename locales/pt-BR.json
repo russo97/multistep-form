@@ -7,5 +7,23 @@
       "Escolha os complementos",
       "Finalizando"
     ]
+  },
+
+  "steps": {
+    "label": "Passo",
+    "items": [
+      {
+        "label": "suas informações"
+      },
+      {
+        "label": "selecione um plano"
+      },
+      {
+        "label": "Adicionais"
+      },
+      {
+        "label": "Resumo"
+      }
+    ]
   }
 }
