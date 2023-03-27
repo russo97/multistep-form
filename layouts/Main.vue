@@ -1,5 +1,5 @@
 <template>
-  <main class="main w-full h-full lg:h-auto lg:max-w-[1024px] lg:mx-auto">
+  <main class="main w-full h-full lg:h-auto lg:max-w-[1024px] lg:mx-auto lg:rounded-xl overflow-hidden">
     <div class="main__wrapper w-full h-full">
       <router-view />
     </div>

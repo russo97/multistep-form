@@ -19,6 +19,7 @@
           bg-no-repeat
           bg-mobile-pattern
           lg:bg-desktop-pattern
+          lg:rounded-xl
         "
       >
         <SingleStep
