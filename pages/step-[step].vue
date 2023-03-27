@@ -23,7 +23,7 @@ definePageMeta({
   name: 'step',
   layout: 'main',
   validate: (route) => {
-    return /^step-[1-4]$/.test(`step-${route.params.step}`)
+    return /^\/step-[1-4]$/.test(route.path)
   }
 })
 </script>
