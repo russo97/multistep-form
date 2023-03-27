@@ -1,6 +1,16 @@
 <template>
-  <section class="formbase w-full h-full">
-    <div class="formbase__wrapper w-full h-full lg:p-4 lg:bg-white">
+  <section class="w-full h-full">
+    <div
+      class="
+        flex
+        flex-col
+        lg:flex-row
+        w-full
+        h-full
+        lg:p-4
+        lg:bg-white
+      "
+    >
       <div
         class="
           flex
@@ -28,6 +38,30 @@
           :step="step"
           :highlighted="+route.params.step === step"
         />
+      </div>
+
+      <div class="flex flex-col flex-1">
+        <div
+          class="
+            flex-1
+            mx-4
+            px-6
+            py-[30px]
+            lg:mx-0
+            lg:px-[100px]
+            bg-white
+            -mt-[70px]
+            lg:mt-0
+          "
+        >
+          <slot />
+        </div>
+
+        <div
+          class="flex items-center h-[70px] bg-white mt-auto px-4 lg:mx-0 lg:px-[100px]"
+        >
+          go back
+        </div>
       </div>
     </div>
   </section>
