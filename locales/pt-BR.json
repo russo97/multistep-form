@@ -25,5 +25,7 @@
         "label": "Resumo"
       }
     ]
-  }
+  },
+  "back": "Voltar",
+  "next-step": "Próximo Passo"
 }

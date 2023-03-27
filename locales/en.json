@@ -25,5 +25,7 @@
         "label": "summary"
       }
     ]
-  }
+  },
+  "back": "Go Back",
+  "next-step": "Next Step"
 }
