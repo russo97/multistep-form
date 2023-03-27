@@ -36,14 +36,13 @@
           v-for="step in howManySteps"
           :key="step"
           :step="step"
-          :highlighted="+route.params.step === step"
+          :highlighted="+$route.params.step === step"
         />
       </div>
 
       <div class="flex flex-col flex-1">
         <div
           class="
-            flex-1
             mx-4
             px-6
             py-[30px]
@@ -52,6 +51,7 @@
             bg-white
             -mt-[70px]
             lg:mt-0
+            rounded-lg
           "
         >
           <slot />
@@ -60,7 +60,39 @@
         <div
           class="flex items-center h-[70px] bg-white mt-auto px-4 lg:mx-0 lg:px-[100px]"
         >
-          go back
+          <router-link
+            v-if="!isFirstStep"
+            to=""
+            class="
+              text-sm
+              font-ubuntu
+              font-medium
+              text-cool-gray
+              hover:text-marine-blue
+              transition-colors
+              lg:text-base
+            "
+          >
+            {{ t('back') }}
+          </router-link>
+
+          <BaseButton
+            :label="t('next-step')"
+            class="
+              ml-auto
+              px-5
+              py-[10px]
+              rounded-md
+              text-sm
+              text-white
+              font-medium
+              font-ubuntu
+              bg-marine-blue
+              lg:hover:bg-opacity-80
+              transition-colors
+              lg:text-base
+            "
+          />
         </div>
       </div>
     </div>
@@ -69,12 +101,18 @@
 
 <script setup>
 import { useRoute } from '#app'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 import SingleStep from '~/components/SingleStep.vue'
+import BaseButton from '~/components/BaseButton.vue'
 
 const howManySteps = ref(4)
 
-const route = useRoute()
+const $route = useRoute()
+
+const isFirstStep = parseInt($route.params.step) === 1
 </script>
 
 <style lang="scss" scoped>
