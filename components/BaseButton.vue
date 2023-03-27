@@ -1,11 +1,18 @@
 <template>
-$END$
+  <button class="flex items-center justify-center">
+    <slot>
+      {{ label }}
+    </slot>
+  </button>
 </template>
 
-<script>
-export default {
-name: "BaseButton"
-}
+<script setup>
+defineProps({
+  label: {
+    type: String,
+    default: () => ''
+  }
+})
 </script>
 
 <style scoped>
